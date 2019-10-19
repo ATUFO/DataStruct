@@ -4,3 +4,5 @@
 1. bigNum 大数相加减
 
 2. haffumanTree 哈夫曼树，编码与译码
+
+3. prim PRIM算法求最小生成树
