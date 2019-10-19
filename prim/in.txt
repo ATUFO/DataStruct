@@ -1,0 +1,26 @@
+6 10
+a b 7
+a f 7
+a d 9
+a c 13
+b f 5
+b e 24
+c d 17
+c e 18
+d e 12
+e f 10
+0 0
+
+
+6 10
+a b 6
+a c 5
+a f 1
+b f 5
+c f 5
+b d 3
+d f 6
+f e 4
+c e 2
+d e 6
+0 0

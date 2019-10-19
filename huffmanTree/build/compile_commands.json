@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/taofu/algorithm-c/dataStruct/huffmanTree/build",
+  "command": "/usr/bin/g++-7    -g   -o CMakeFiles/haffumanTree.dir/main.cpp.o -c /home/taofu/algorithm-c/dataStruct/huffmanTree/main.cpp",
+  "file": "/home/taofu/algorithm-c/dataStruct/huffmanTree/main.cpp"
+}
+]

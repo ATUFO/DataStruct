@@ -1,0 +1,1 @@
+g++ -g prim.cpp -o main &&./main <in.txt
