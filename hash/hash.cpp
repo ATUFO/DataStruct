@@ -41,7 +41,7 @@ void insertToLink(node *head, int num)
     node *newNode = (node *)malloc(sizeof(node)); // 生成新节点
     newNode->x = num;
 
-    while (ptr->next) // 如果待插入节点比ptr->next->x 小，那么插入。否则在56行插入至尾部
+    while (ptr->next) // 如果待插入节点比ptr->next->x 小，那么插入。否则在函数最后插入至尾部
     {
         if (num < ptr->next->x)
         {
