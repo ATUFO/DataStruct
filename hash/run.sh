@@ -1,1 +1,1 @@
-g++ hash.cpp -o hash&&cat in.txt|./hash
+g++ -g hash.cpp -o hash&&cat in.txt|./hash

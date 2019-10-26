@@ -21,7 +21,7 @@ int main()
     int x; // temp var
     cin >> T >> N >> M;
     hashTable = (node *)malloc(sizeof(node) * T); // 初始化hash表
-    lenTable = (int *)malloc(sizeof(int) * T);    // 初始化长度表
+    lenTable = (int *)malloc(sizeof(int) * M);    // 初始化长度表
     for (int i = 0; i < M; i++)
     {
         cin >> x;
@@ -33,15 +33,15 @@ int main()
 
 void insertToLink(node *head, int num)
 {
+    node *newNode = (node *)malloc(sizeof(node)); // 生成新节点
+    newNode->x = num;
+
     node *ptr = head;
 
     ptr->x++; // 增长链表长度并记录
     lenTable[ptr->x]++;
 
-    node *newNode = (node *)malloc(sizeof(node)); // 生成新节点
-    newNode->x = num;
-
-    while (ptr->next) // 如果待插入节点比ptr->next->x 小，那么插入。否则在函数最后插入至尾部
+    while (ptr->next != NULL) // 如果待插入节点比ptr->next->x 小，那么插入。否则在函数最后插入至尾部
     {
         if (num < ptr->next->x)
         {
@@ -76,7 +76,7 @@ void displayASL() // 计算及输出ASL ，控制格式稍微麻烦一点
     cout << "ASL="
          << "(";
     int sum = 0;
-    for (int i = 1; i < T; i++)
+    for (int i = 1; i < M; i++)
     {
         sum += lenTable[i] * i;
         if (lenTable[i])
