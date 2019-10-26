@@ -1,5 +1,5 @@
 # 数据结构实验代码集
-<img src="https://img14.360buyimg.com/n1/jfs/t24907/183/814695306/202452/7cb5b2ea/5b7d3ac8N92ea02b4.jpg" height="200" width="250">
+![](https://img14.360buyimg.com/n1/jfs/t24907/183/814695306/202452/7cb5b2ea/5b7d3ac8N92ea02b4.jpg)
 
 ----
 
