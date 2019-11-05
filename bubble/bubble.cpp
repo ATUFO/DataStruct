@@ -6,7 +6,7 @@ int seq[1000];
 int index[1000];
 int n;
 
-void display(int d);
+void display();
 
 int main()
 {
@@ -19,7 +19,8 @@ int main()
 
     for (int i = 1; i < n; i++)
     {
-        display(n - i + 1);
+        display();
+       // display(n - i + 1);
         for (int j = 0; j < n - i; j++)
         {
             if (seq[j] > seq[j + 1])
@@ -29,7 +30,7 @@ int main()
             }
         }
     }
-    display(n - 1);
+  //  display(n - 1);
     for (int i = 0; i < n; i++)
     {
         cout << setw(2) << index[i] << " ";
@@ -37,9 +38,9 @@ int main()
     cout << endl;
 }
 
-void display(int d)
+void display()
 {
-    for (int i = 0; i <= d; i++)
+    for (int i = 0; i <= n; i++)
         if (seq[i])
             cout << setw(2) << seq[i] << " ";
     cout << endl;
